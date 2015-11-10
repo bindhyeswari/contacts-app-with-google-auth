@@ -1,0 +1,18 @@
+<section class="panel">
+
+    <h1>Profile Information</h1>
+    <a ui-sref="landing">Landing</a>
+    <div class="panel">
+        {{user.displayName}}
+    </div>
+    <button ng-click="edit = !edit">Edit</button>
+    <div class="user" ng-show="edit">
+        <input type="text" placeholder="first name" ng-model="new_user.name.first"/><br/>
+        <input type="text" placeholder="last name" ng-model="new_user.name.last"/><br/>
+        <input type="email" placeholder="email" ng-model="new_user.email"/><br/>
+        <input type="text" placeholder="github url" ng-model="new_user.github"/><br/>
+        <input type="text" placeholder="linkedin url" ng-model="new_user.linkedin"/><br/>
+        <button ng-click="createUser()">Save</button>
+    </div>
+
+</section>

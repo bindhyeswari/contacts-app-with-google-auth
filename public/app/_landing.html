@@ -1,0 +1,12 @@
+<section class="panel">
+
+    <h1>Landing Controller ... </h1>
+    <a ui-sref="profile">Profile</a>
+    <div class="panel">
+        <div ng-hide="user">Please wait while I check you in ...</div>
+        <div ng-show="user">
+            Hello {{user.displayName}}, What do you want to do today?
+        </div>
+    </div>
+
+</section>
